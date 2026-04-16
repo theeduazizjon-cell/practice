@@ -48,3 +48,17 @@ print("result_3:", result_3)
 
 result_4 = give_greet("Alex")
 print("result_4:", result_4)
+
+print("=== Scope ===")
+b = 100
+
+# Define
+
+
+def calculate(a, b):
+    c = a * b
+    print(f"the c value: {c}")
+
+
+# Call
+calculate(5, 50)
