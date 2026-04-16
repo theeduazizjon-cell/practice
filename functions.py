@@ -15,18 +15,36 @@ print("=== Define and Call ===")
 # Define - build
 
 
-def greet(a):
-    print(f"How do you do?, {a}")
+def greet(a):  # void
+    print(f"How do you do?, {a}")  # a is a parametr
 
 
-def greeting(b):
+def greeting(b):  # returning function
     print("Greeting is executed ")
     return f"Hi {b}"
 
 
 # Call - excecute
-result_1 = greet("Alex")
+result_1 = greet("Alex")  # argument
 print("result1:", result_1)
 
-result_2 = greeting("Justin")
+result_2 = greeting("Justin")  # argument
 print("result2:", result_2)
+
+print("===== Keyword & Defualt arguments =====")
+# Define
+
+
+def give_greet(name, age=21):
+    print("give greet is excecuted")
+    return f"Hi {name}, you are {age} years old!"
+
+# Call
+
+
+# name and age are called keywords argument to make our code more clean and readable
+result_3 = give_greet(name="Alex", age=21)
+print("result_3:", result_3)
+
+result_4 = give_greet("Alex")
+print("result_4:", result_4)
