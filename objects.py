@@ -52,7 +52,7 @@ try:
 except KeyError as err:
     print("No origin state property found:", err)
 except AttributeError as err:
-    print("No speed found:", err)
+    print("")
 else:
     print("Executed succesfully without errors")
 finally:
