@@ -42,6 +42,9 @@ class Dog(Animal):  # Child , extended. Parent can pass it's property
     def protect(self):
         print("Yes, I can protect you")
 
+    def make_voice(self):
+        print(f"the {self.name} says {self.sound}")
+
 
 class cat(Animal):  # Child , extended. Parent can pass it's property
     # state
@@ -96,3 +99,21 @@ print(Dog.description)
 print(dog.voice, fish.voice)
 print("dog.status:", dog.status)
 print("cat.status:", cat.status)
+
+
+print("=== Polimorphism ===")
+dog.make_voice()
+fish.make_voice()
+
+print("---")
+# fish -> Fish -> Animal -> Object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print("result:", result)
+
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data1, data2)
