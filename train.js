@@ -15,13 +15,15 @@ function checkContent(str1, str2) {
         return false;
     }
 
-    let sortedstr1 = str1.split('').sort('').join('');
-    let sortedstr2 = str2.split('').sort('').join('')
+    let sortedstr1 = str1.split('').sort().join('');
+    let sortedstr2 = str2.split('').sort().join('');
 
-    return sortedstr1 == sortedstr2;
+    return sortedstr1 === sortedstr2;
 }
 
-console.log(checkContent("mitgroup", ("gmtiprou"))
+console.log(checkContent("mitgroup", ("gmtiprou")))
+
+
 /* B - Task 
 Savol:
 Shunday function tuzing, u 1 ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin. 
