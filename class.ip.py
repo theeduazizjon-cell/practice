@@ -97,6 +97,7 @@ print(Animal.description)
 print(Dog.description)
 
 print(dog.voice, fish.voice)
+
 print("dog.status:", dog.status)
 print("cat.status:", cat.status)
 
