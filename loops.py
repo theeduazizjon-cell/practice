@@ -55,7 +55,7 @@ while True:
     x = int(input("Find number "))
 
     if x == 41:
-        print(f"Your food number is {count} steps")
+        print(f"You found number {count} steps")
         break
     else:
         print("Wrong, please find again!")
