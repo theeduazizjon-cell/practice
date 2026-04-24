@@ -1,4 +1,32 @@
 /* 
+
+D - Task 
+Savol: 
+Shunday function tuzingki unga integraldan iborat array pass bolsin 
+va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin 
+Masalan: gethighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini 
+
+*/
+
+// Masalaning yechimi 
+
+function getHighestIndex(arr) {
+    let max = arr[0];
+    let index = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    return index;
+}
+
+console.log(getHighestIndex([5, 21, 12, 21, 8]));
+
+
+/* 
 C - Task
 Savol:
 Shunday function tuzing, u 2 ta string parametr ga ega bolsin, hamda 
@@ -8,7 +36,8 @@ Masalan: checkContent("mitgroup","gmtiptou")
 true ni return qiladi 
 */
 
-// Masalaning yechimi 
+/* 
+Masalaning yechimi 
 
 function checkContent(str1, str2) {
     if (str1.length !== str2.length) {
