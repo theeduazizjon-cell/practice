@@ -1,5 +1,28 @@
 /* 
 
+E - Task 
+Savol: 
+Shunday function tuzingki u bitta string argumentni qabul qilib osha stringni 
+teskari qilib return qilsin. 
+Masalan: getReverse("hello") return qiladi "olleh" 
+
+*/
+
+// Masalaning yechimi 
+
+function getReverse(str) {
+    let result = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        result += str[i];
+    }
+
+    return result;
+}
+console.log(getReverse("hello"));
+
+/* 
+
 D - Task 
 Savol: 
 Shunday function tuzingki unga integraldan iborat array pass bolsin 
@@ -8,7 +31,7 @@ Masalan: gethighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini
 
 */
 
-// Masalaning yechimi 
+/* Masalaning yechimi 
 
 function getHighestIndex(arr) {
     let max = arr[0];
