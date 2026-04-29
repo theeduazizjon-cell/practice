@@ -88,6 +88,7 @@ numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)
 print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
 
+
 print("=== Lambda function ===")
 # Lambda is small anonymous function!
 
