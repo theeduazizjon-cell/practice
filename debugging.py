@@ -4,7 +4,6 @@ Package and Debugging
 2) Package manager & external package
 3) Debugging
 """
-"""
 
 from PIL import Image
 import turtle
@@ -46,7 +45,7 @@ with Image.open("material/pngwing.com.png") as img_obj:
     resized_img.show()
     resized_img.save("material/sample.png")
 
-"""
+
 print("=== Debugging ===")
 
 

@@ -1,5 +1,28 @@
 /* 
 
+F - Task 
+Savol: 
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda 
+bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak. 
+Masalan: getReverse("hello") return true qiladi 
+
+Masalaning yechimi: 
+*/
+
+function findDoublers(str) {
+    for (let i = 0; i < str.length; i++) {
+        for (let j = i + 1; j < str.length; j++) {
+            if (str[i] === str[j]) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+console.log(findDoublers("hello"));
+
+/*
+
 E - Task 
 Savol: 
 Shunday function tuzingki u bitta string argumentni qabul qilib osha stringni 
@@ -8,7 +31,8 @@ Masalan: getReverse("hello") return qiladi "olleh"
 
 */
 
-// Masalaning yechimi 
+/* 
+Masalaning yechimi 
 
 function getReverse(str) {
     let result = "";
