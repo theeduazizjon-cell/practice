@@ -26,13 +26,25 @@ git pull origin master
 - Object 
 - Class about 
 - Class deep dive: Encapsulation 
- Class deep dive: Inheritance & Polimorphism
+- Class deep dive: Inheritance & Polimorphism
 - Operation & Conditions 
 - Loops 
 - Tuple 
 - List 
 - Array 
 - Comprehension 
-- Debugging 
-- ... 
+- Packages & Debugging 
+- ...
+
+ ## Pip commands: 
+ ''
+ windows pip | macOs pip3 
+
+ pip list 
+ pip install pillow 
+ pip uninstall pillow 
+ pip show pillow 
+ pip freeze > requirements.txt
+
+ ''
 
