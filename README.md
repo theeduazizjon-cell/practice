@@ -26,7 +26,6 @@ git pull origin master
 - Object 
 - Class about 
 - Class deep dive: Encapsulation 
-- Class deep dive: Inheritance & Polimorphism
 - Operation & Conditions 
 - Loops 
 - Tuple 
