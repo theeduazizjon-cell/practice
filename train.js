@@ -1,5 +1,29 @@
 /* 
 
+H - Task 
+Savol: 
+Shunday function tuzing, u integraldan iborat arrayni argument 
+sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin 
+
+Masalan: 
+getpositive([1, -4, 2]) return qiladi "12". 
+
+Masalaning yechimi: 
+*/
+function getPositive(arr) {
+    let result = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            result.push(arr.[i])
+        }
+    }
+    return result.join("")
+}
+
+console.log(getPositive([1, -4, 2]));
+
+/* 
+
 F - Task 
 Savol: 
 Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda 
@@ -8,7 +32,7 @@ Masalan: getReverse("hello") return true qiladi
 
 Masalaning yechimi: 
 */
-
+/* 
 function findDoublers(str) {
     for (let i = 0; i < str.length; i++) {
         for (let j = i + 1; j < str.length; j++) {
