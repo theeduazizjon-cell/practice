@@ -1,4 +1,38 @@
 /* 
+J-TASK 
+
+Savol: 
+Shunday function yozing, 
+u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
+
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+
+Masalaning yechimi:
+*/
+
+function majorityElement(nums) {
+    let count = {};
+    let maxCount = 0;
+    let majority = nums[0];
+
+    for (let num of nums) {
+        count[num] = (count[num] || 0) + 1;
+
+        if (count[num] > maxCount) {
+            maxCount = count[num];
+            majority = num;
+        }
+    }
+
+    return majority;
+}
+
+console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+
+
+
+
+/* 
 
 H - Task 
 Savol: 
@@ -9,7 +43,8 @@ Masalan:
 getpositive([1, -4, 2]) return qiladi "12". 
 
 Masalaning yechimi: 
-*/
+
+
 function getPositive(arr) {
     let result = []
     for (let i = 0; i < arr.length; i++) {
