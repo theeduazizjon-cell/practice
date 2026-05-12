@@ -1,4 +1,28 @@
 /* 
+
+L-TASK (N
+
+Masalaning sharti: 
+Shunday function yozing, u string qabul qilsin 
+va string ichidagi hamma sozlarni chappasiga yozib 
+va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+
+
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+
+
+Masalaning yechimi:
+*/
+
+function reverseSentence(str) {
+    let words = str.split(" ");
+    let reversedWords = words.map(word => word.split("").reverse().join(""));
+    return reversedWords.join(" ");
+}
+
+console.log(reverseSentence("we like coding!"));
+
+/* 
 J-TASK 
 
 Savol: 
@@ -8,7 +32,7 @@ u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
 MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 
 Masalaning yechimi:
-*/
+
 
 function majorityElement(nums) {
     let count = {};
