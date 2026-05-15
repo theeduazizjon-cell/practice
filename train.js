@@ -12,7 +12,7 @@ MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 
 
 Masalaning yechimi:
-*/
+
 
 function reverseSentence(str) {
     let words = str.split(" ");
